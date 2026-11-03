@@ -120,3 +120,7 @@ html,body{background:var(--bg);color:var(--ink)}
 .sec-title{font-family:"BarlowC",sans-serif;text-transform:uppercase;letter-spacing:.4px}
 .om-portada img{display:block;margin:0 auto}
 .om-badge{align-self:flex-start;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:#111214;background:var(--verde);padding:3px 7px;border-radius:6px;margin-bottom:4px}
+
+/* Sin zoom al dar doble toque */
+html,body,button,a,label,input,.card,.om-cat,.om-entrega{touch-action:manipulation}
+.topbar-sub{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

@@ -70,7 +70,7 @@
   function actualizarSubtitulo(){
     const n = modelos.length;
     const d = piezas.reduce((a, p) => a + (p.cantidad || 0), 0);
-    $('subtitulo').textContent = `${n === 1 ? '1 modelo' : n + ' modelos'} · ${d} de entrega inmediata`;
+    $('subtitulo').textContent = `${n === 1 ? '1 modelo' : n + ' modelos'} · ${d === 1 ? '1 lista' : d + ' listas'}`;
   }
 
   function pintarEsqueleto(){
