@@ -1,0 +1,122 @@
+/* Tema Indumetálicas El Omnipotente: negro forja, acero y verde manzana (solo acentos) */
+@font-face{font-family:"BarlowC";font-weight:700;src:url(../fonts/barlow-condensed-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"BarlowC";font-weight:800;src:url(../fonts/barlow-condensed-latin-800-normal.woff2) format("woff2")}
+:root{
+  --bg:#111214; --surface:#1B1D20; --surface-2:#24272A;
+  --ink:#F1F2F3; --ink-soft:#A3A8AD; --ink-faint:#6E7378;
+  --line:#2C3034; --line-strong:#3A3E43;
+  --accent:#D4D7DB; --accent-ink:#111214; --accent-soft:rgba(212,215,219,0.10);
+  --verde:#8CD44A;
+  --acero:linear-gradient(180deg,#F1F2F4 0%,#C3C8CD 100%);
+  --shadow-sm:0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md:0 10px 30px rgba(0,0,0,0.45);
+  --shadow-lg:0 18px 40px rgba(0,0,0,0.55);
+}
+html,body{background:var(--bg);color:var(--ink)}
+.topbar{background:rgba(17,18,20,0.92)!important;border-color:var(--line)!important}
+.topbar-title,.ini-title,.det-name,.sheet-title,.ini-nombre,.sec-title{font-family:"BarlowC",-apple-system,sans-serif!important;text-transform:uppercase;letter-spacing:.4px!important}
+.ini-title{font-size:30px!important}
+.det-name{font-size:28px!important}
+.eslogan{color:var(--ink-soft)!important;font-family:inherit!important;font-style:normal!important;letter-spacing:2px;text-transform:uppercase;font-size:12px!important;font-weight:700}
+.logo-mark.con-img{background:transparent!important;border:none!important}
+.logo-mark.con-img img{border-radius:50%}
+/* Botón principal y WhatsApp: acero, no verde */
+.btn-primary,.btn-wa,.fab{background:var(--acero)!important;color:#111214!important;border:none!important}
+.btn-wa svg{color:#111214}
+.btn-secondary{background:transparent!important;color:var(--ink)!important;border:1px solid var(--line-strong)!important}
+/* Entrega inmediata destacada: placa de acero cepillado oscura con punto verde */
+.ini-tile.destacado{background:repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px),linear-gradient(180deg,#2B2E32,#1D1F22)!important;border:1px solid #3E4247!important}
+.ini-tile.destacado .ini-ico{background:rgba(140,212,74,.14)!important;color:var(--verde)!important}
+.ini-tile.destacado .ini-cuenta{color:var(--accent)!important}
+.ini-tile .ini-ico{background:var(--surface-2)!important;color:var(--accent)!important;border:1px solid var(--line-strong)}
+.tag-disp{background:rgba(17,18,20,.88)!important;color:#fff!important}
+.tag-disp::before{background:var(--verde)!important}
+.tag-agotado{background:rgba(255,255,255,.92)!important;color:#111214!important}
+.card-price,.det-price,.linea-precio{color:var(--ink)!important;font-family:"BarlowC",sans-serif;font-weight:700!important;font-size:21px}
+.chip.active,.opt.selected,.tchip.on{background:var(--acero)!important;color:#111214!important;border-color:transparent!important}
+.tchip.on .tick{background:#111214!important}
+.spec-chip{background:var(--surface-2)!important;color:var(--ink)!important;border-color:var(--line-strong)!important}
+.input,textarea.input{background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line-strong)!important}
+.sheet,.sheet-foot{background:#17181A!important}
+.sheet-scrim{background:rgba(0,0,0,.6)!important}
+.preg-ico{background:#111214!important;color:#fff!important}
+.ini-todo.pregunta{background:var(--acero)!important;color:#111214!important;border:none!important}
+.ini-todo.pregunta .preg-s{color:#41464B!important}
+.marca-linea{background:var(--verde)!important}
+.sede-icon,.sede-ir{color:var(--verde)!important}
+.bottom-nav{background:#17181A!important;border-color:var(--line)!important}
+.sheet-x,.ayuda-flota{background:#2A2D31!important;color:#fff!important}
+.photo-tag,.card-badge{background:rgba(17,18,20,.88)!important;color:#fff!important}
+.swatch{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35)!important}
+.sw-negro{background:#050505!important}
+#menuModulos,#campoSede{display:none!important}
+.tb-links{display:flex;gap:8px;margin-left:auto}
+.tb-link{height:40px;padding:0 12px;border-radius:12px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;white-space:nowrap;border:1px solid var(--line-strong);color:var(--ink);background:transparent}
+.tb-link.pri{background:var(--acero);color:#111214;border:none}
+.fila-links{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;margin:12px 18px 2px}
+.fila-links .tb-link{justify-content:center;height:44px;text-decoration:none}
+.sheet-back{background:#2A2D31!important;color:#fff!important}
+.hero .zoom-hint{background:rgba(17,18,20,.85)!important;color:#fff!important}
+.hero{background:#0B0C0D!important}
+/* ===== Inicio propio ===== */
+.en-inicio .topbar{display:none!important}
+.om-portada{text-align:center;padding:calc(18px + var(--safe-t)) 18px 18px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px),linear-gradient(180deg,#24272B,#111214);border-bottom:1px solid var(--line)}
+.om-portada img{width:132px;height:132px;border-radius:50%;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.om-abierto{display:inline-flex;align-items:center;gap:7px;margin-top:10px;font-size:13px;font-weight:600;color:var(--accent);background:rgba(0,0,0,.35);padding:6px 12px;border-radius:999px}
+.om-abierto i{width:7px;height:7px;border-radius:50%;background:var(--verde)}
+.om-abierto i.no{background:#8D9399}
+.om-raya{width:38px;height:3px;border-radius:2px;background:var(--verde);margin:8px 0 14px}
+.om-entrega{position:relative;display:block;width:100%;height:122px;border-radius:18px;overflow:hidden;border:1px solid #3A3E43;background:#1B1D20;text-align:left;opacity:0;animation:cardIn 380ms var(--ease-out) forwards;transition:transform 150ms var(--ease-out)}
+.om-entrega:active{transform:scale(0.97)}
+.om-fotos{position:absolute;inset:0;display:grid;gap:2px}
+.om-fotos.n2{grid-template-columns:1fr 1fr}.om-fotos.n3{grid-template-columns:1fr 1fr 1fr}
+.om-fotos img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.om-velo{position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,18,20,.94) 0%,rgba(17,18,20,.78) 55%,rgba(17,18,20,.35) 100%)}
+.om-ent-txt{position:absolute;inset:0;display:flex;align-items:center;gap:12px;padding:0 14px 0 16px;color:#fff}
+.om-ent-ico{width:48px;height:48px;border-radius:14px;background:rgba(140,212,74,.16);color:var(--verde);display:flex;align-items:center;justify-content:center;flex:none}
+.om-ent-t{display:block;font-family:"BarlowC",sans-serif;font-weight:800;font-size:23px;text-transform:uppercase;letter-spacing:.4px;line-height:1}
+.om-ent-s{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--accent);margin-top:5px;font-weight:600}
+.om-ent-s i{width:7px;height:7px;border-radius:50%;background:var(--verde)}
+.om-ent-txt .chev{margin-left:auto;flex:none}
+.om-cats{margin-top:10px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface)}
+.om-cat{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px;text-align:left;opacity:0;animation:cardIn 380ms var(--ease-out) forwards;animation-delay:calc(var(--i,0) * 50ms);transition:transform 140ms var(--ease-out)}
+.om-cat + .om-cat{border-top:1px solid var(--line)}
+.om-cat:active{transform:scale(0.98)}
+.om-cat-ico{width:46px;height:46px;border-radius:12px;flex:none;display:flex;align-items:center;justify-content:center;color:var(--accent);background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px),linear-gradient(180deg,#30343A,#202326);border:1px solid #42464B}
+.om-cat-txt{flex:1;min-width:0}
+.om-cat-t{display:block;font-family:"BarlowC",sans-serif;font-weight:800;font-size:19px;text-transform:uppercase;letter-spacing:.4px;line-height:1.05}
+.om-cat-s{display:block;font-size:13px;color:var(--ink-soft);margin-top:2px}
+.om-cat-fotos{display:flex}
+.om-cat-fotos img{width:34px;height:42px;object-fit:cover;border-radius:7px;border:2px solid var(--surface)}
+.om-cat-fotos img + img{margin-left:-10px}
+.om-cat .chev{color:var(--ink-faint);flex:none}
+.om-contacto{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.om-btn{display:flex;align-items:center;gap:10px;padding:12px;border-radius:16px;border:1px solid var(--line-strong);color:var(--ink);text-decoration:none;transition:transform 140ms var(--ease-out)}
+.om-btn:active{transform:scale(0.97)}
+.om-btn b{display:block;font-size:15px;line-height:1.1}
+.om-btn small{display:block;font-size:11.5px;color:var(--ink-soft);margin-top:2px}
+.om-btn.pri{background:var(--acero);color:#111214;border:none}
+.om-btn.pri small{color:#454A4F}
+.om-btn svg{flex:none}
+#vistaInicio .pie{padding-top:18px;letter-spacing:1px}
+/* ===== Tarjetas con nombre y precio sobre la foto ===== */
+.om-card{padding:0!important;overflow:hidden;border-radius:16px!important}
+.om-card .card-photo{aspect-ratio:3/4!important;border-radius:0!important}
+.om-card .card-photo img{width:100%;height:100%;object-fit:cover}
+.om-card-pie{position:absolute;left:0;right:0;bottom:0;padding:34px 11px 10px;background:linear-gradient(180deg,rgba(17,18,20,0) 0%,rgba(17,18,20,.92) 60%);display:flex;flex-direction:column;gap:1px;text-align:left}
+.om-card .card-name{margin:0!important;font-size:15px!important;color:#fff;-webkit-line-clamp:2}
+.om-card .card-price{margin:0!important;padding:0!important;font-size:20px!important;color:#fff!important}
+.om-card .tag-disp,.om-card .tag-agotado{top:8px!important;left:8px!important;bottom:auto!important}
+.om-card .card-badge{top:auto!important;left:auto!important;right:8px;top:8px!important}
+/* ===== Ficha ===== */
+.om-ficha{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-strong);border-radius:14px;overflow:hidden;border:1px solid var(--line-strong)}
+.om-ficha div{background:var(--surface);padding:10px 12px}
+.om-ficha small{display:block;font-size:12px;color:var(--ink-soft);font-weight:600}
+.om-ficha b{display:flex;align-items:center;gap:6px;font-size:15.5px;margin-top:2px}
+.om-ficha div:last-child:nth-child(odd){grid-column:1/-1}
+.om-trae{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.om-trae span{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:9px;background:var(--surface-2);font-size:14px;font-weight:600}
+.om-trae i{width:6px;height:6px;border-radius:50%;background:var(--verde)}
+.sec-title{font-family:"BarlowC",sans-serif;text-transform:uppercase;letter-spacing:.4px}
+.om-portada img{display:block;margin:0 auto}
+.om-badge{align-self:flex-start;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:#111214;background:var(--verde);padding:3px 7px;border-radius:6px;margin-bottom:4px}
